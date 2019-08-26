@@ -46,7 +46,6 @@ int main(int argc, char* argv[])
   po::notify(vm);
 
   int deviceId = vm["device"].as<int>();
-  ;
   int quality = vm["quality"].as<int>();
   int width = vm["width"].as<int>();
   int height = vm["height"].as<int>();
