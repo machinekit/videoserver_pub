@@ -1,0 +1,6 @@
+include(FindProtobuf)
+find_package(Protobuf REQUIRED)
+include_directories(${PROTOBUF_INCLUDE_DIR})
+protobuf_generate_cpp(PROTO_SRC PROTO_HEADER package.proto)
+add_library(proto ${PROTO_HEADER} ${PROTO_SRC})
+target_link_libraries(proto PUBLIC ${PROTOBUF_LIBRARY})
