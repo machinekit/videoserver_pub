@@ -17,6 +17,8 @@ sudo apt install libopencv-dev libboost-program-options-dev libboost-log-dev pro
 ```
 
 ```bash
+git clone https://github.com/machinekoder/videoserver_pub
+cd videoserver_pub
 mkdir build && cd build
 cmake .. -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++
 ```
